@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/styles.css">
+    
+
+</head>
+<body>
+    <!-- Bateria (instrumento musical) em Javascript -->
+    <!-- A kind of drum kit in JS-->
+    
+    <!--    Criando a referêcnia às teclas   -->
+    <div class="keys">
+
+            <div data-key='83' class="key">
+                <kbd>S</kbd>
+                <span class="sound-key">tink</span>
+            </div>
+            <div data-key='68' class="key">
+                <kbd>D</kbd>
+                <span class="sound-key">clap</span>
+            </div>
+            <div data-key='70' class="key">
+                <kbd>F</kbd>
+                <span class="sound-key">hihat</span>
+            </div>
+            <div data-key='71' class="key">
+                <kbd>G</kbd>
+                <span class="sound-key">kick</span>
+            </div>
+            <div data-key='72' class="key">
+                <kbd>H</kbd>
+                <span class="sound-key">openhat</span>
+            </div>
+            <div data-key='74' class="key">
+                <kbd>J</kbd>
+                <span class="sound-key">boom</span>
+            </div>
+            <div data-key='75' class="key">
+                <kbd>K</kbd>
+                <span class="sound-key">ride</span>
+            </div>
+            <div data-key='76' class="key">
+                <kbd>L</kbd>
+                <span class="sound-key">caixa</span>
+            </div>
+            <div data-key='186' class="key">
+                <kbd>Ç</kbd>
+                <span class="sound-key">surdo</span>
+            </div>
+
+    </div>
+
+    <!-- Vinculando cada arquivo de áudio ao respectivo key -->
+    <audio data-key="68" src="sounds/clap.wav"></audio>
+    <audio data-key="70" src="sounds/hihat.wav"></audio>
+    <audio data-key="71" src="sounds/kick.wav"></audio>
+    <audio data-key="72" src="sounds/openhat.wav"></audio>
+    <audio data-key="74" src="sounds/boom.wav"></audio>
+    <audio data-key="75" src="sounds/ride.wav"></audio>
+    <audio data-key="76" src="sounds/snare.wav"></audio>
+    <audio data-key="186" src="sounds/tom.wav"></audio>
+    <audio data-key="83" src="sounds/tink.wav"></audio>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>     
