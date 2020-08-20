@@ -1,6 +1,21 @@
 //Capturando keys dentro de um array
 const allKeys = Array.from(document.querySelectorAll('.key'));
 
+
+//Capturando btnChange
+const bodyHtml = document.body;
+const btnChange = document.querySelector('.change');
+btnChange.addEventListener('click', () => {
+    if(bodyHtml.style.backgroundImage == 'url("img/background-drum.jpg")'){
+
+        bodyHtml.style.backgroundImage = 'url("img/background-microphone.jpg")';
+    } else {
+
+        bodyHtml.style.backgroundImage = 'url("img/background-drum.jpg")';
+    }
+    
+})
+
 //Event
 
 allKeys.forEach(key => key.addEventListener('transitionend', removeTrans));
