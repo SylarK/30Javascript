@@ -1,15 +1,71 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.marker{
+    border: 2px solid red;
+}
+
+#container{
+    padding: 30px;
+    min-height: 100vh;
+}
+
+#msg{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 2rem;
+    justify-content: center;
+    height: 110px;
+}
+
+#show{
+    text-decoration: none;
+    transition: all 0.8s;
+    font-size: 5vh;
+}
+
+#show p{
+
+    animation: neon4 1s ease-in-out infinite alternate;
+    color: gold;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+#show p:hover{
+
+    color: gold;
+
+}
+
+
 
 li{
     padding: 0;
     float: left;
     margin: 10px;
-    outline: solid;
+    border: 2px solid rgb(95, 95, 95);
     width: 150px;
     height: 150px;
+    list-style: none;
 }
 
 img{
@@ -24,4 +80,20 @@ img{
 
 .face-down img{
     opacity: 0;
+}
+
+
+@-webkit-keyframes neon4 {
+
+    from {
+
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 239, 96), 0 0 70px rgb(255, 239, 96), 0 0 80px rgb(255, 239, 96), 0 0 100px rgb(255, 239, 96), 0 0 150px rgb(255, 239, 96);
+
+    }
+    to {
+
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(255, 239, 96), 0 0 35px rgb(255, 239, 96), 0 0 40px rgb(255, 239, 96), 0 0 50px rgb(255, 239, 96), 0 0 75px rgb(255, 239, 96);
+
+    }
+
 }

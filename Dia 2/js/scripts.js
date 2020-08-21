@@ -1,7 +1,10 @@
 /*Variavel de Imagens que será puxada de maneira dinâmica*/
 var images = [];
-var nivel1 = 3;
+var msg = document.querySelector('#show');
+msg.style.display = 'none';
+var nivel1 = 4;
 var check = [];
+var score = 0;
 const myPanel = document.querySelector('#container');
 
 for (var i = 0; i < nivel1; i++){
@@ -9,7 +12,6 @@ for (var i = 0; i < nivel1; i++){
     var rand = Math.floor(Math.random() * 16)
     if(check.lastIndexOf(rand) == -1){
         check.push(rand);
-        console.log(rand);
         var img     = 'https://api.adorable.io/avatars/150/abott'+rand+'@adorable.png';
         images.push(img);
         images.push(img);
@@ -107,6 +109,7 @@ $("li").click(function() {
 
     
         if (document.querySelectorAll('.match').length === nivel1 * 2){
+            msg.style.display = 'block';
             console.log('Você ganhou!');
         }
     }
