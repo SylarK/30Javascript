@@ -1,6 +1,6 @@
 /*Variavel de Imagens que será puxada de maneira dinâmica*/
 var images = [];
-var nivel1 = 8;
+var nivel1 = 3;
 var check = [];
 const myPanel = document.querySelector('#container');
 
@@ -103,6 +103,11 @@ $("li").click(function() {
             //reset no count
             count = 0;
             setTimeout(function(){ console.clear();}, 60000);
+        }
+
+    
+        if (document.querySelectorAll('.match').length === nivel1 * 2){
+            console.log('Você ganhou!');
         }
     }
 
