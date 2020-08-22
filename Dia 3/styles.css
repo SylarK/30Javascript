@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ecf0f1;
+    color: #fff;
+    font-family: sans-serif;
+    color: black;
+}
+
+.marker{
+    border: 2px solid red;
+}
+
+body .window{
+    background: #fff;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 10vh;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #acacac;
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form button{
+    width: 50px;
+    height: 40px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+    background: #446777;
+    color: #ffffff;
+    margin-top: 10px ;
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+form input{
+    width: 250px;
+    height: 28px;
+    margin-top: 15px;
+}
+
+.window .title-bar {
+        background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+        background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+        background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+        background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+        background: linear-gradient(top, #ebebeb, #d5d5d5);
+        color: #4d494d;
+        font-size: 11pt;
+        line-height: 20px;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        padding-top: 5px;
+        border-top: 1px solid #f3f1f3;
+        border-bottom: 1px solid #b1aeb1;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        cursor: default;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.data h4, h5{
+    padding: 10px;
+}
+
+#register ul{
+    padding: 5px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+#register ul img{
+        margin-right: 30px;
+        float: right;
+        width: 15px;
+        height: auto;
+}
+
+@media screen and (max-width:768px){
+
+
+    .window .title-bar{
+        height: 80px;
+        padding: 20px;
+    }
+
+    body form{
+        margin-top: 60px ;
+    }
+
+    body .window{
+        margin-top: 0px;
+    }
+
+}
