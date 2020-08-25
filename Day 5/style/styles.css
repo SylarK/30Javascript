@@ -6,8 +6,29 @@
 
 body{
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 25);
+
 }
+
+
 
 .marker{
     border: 2px solid red;
 }
+
+body .btn-change{
+    border: 2px solid orange;
+    height: 45px;
+    width: 90px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 20, 1);
+    font-size: 0.8rem;
+    
+}
+
