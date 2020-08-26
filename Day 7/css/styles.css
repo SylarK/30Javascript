@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+
+    background: rgb(225, 225, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.marker{
+    border: 2px solid red;
+}
+
+body .panel{
+    box-shadow: 5px 10px rgb(218, 218, 218);
+    padding: 20px;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 8px;
+}
+
+body .panel h2{
+    font-size: 6rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+body .panel .row_options{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+body .panel img{
+    width: 30px;
+    height: 45px;
+}
+
+body .panel .row_options p{
+    margin: 30px;
+    cursor: pointer;
+    
+}
+
+body .control-panel{
+    width: 100%;
+    max-width: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+body .control-panel .arrows p{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+body .control-panel .arrows h5{
+    width: 100px;
+    text-align: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+
+body .control-panel img{
+    width: 25px;
+    height: 35px;
+    margin: -5px;
+}
+
+body .control-panel .arrows{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
