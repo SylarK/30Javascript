@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(235,235,235), rgb(103, 122, 134));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marker{
+    border: 2px solid red;
+}
+
+.banner-container{
+    width: 70%;
+    height: 420px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-single{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-single:nth-child(1){
+    background-image: url(../img/wp-taxi.jpg);
+}
+
+.banner-single:nth-child(2){
+    background-image: url(../img/wp-road.jpg);
+}
+
+.banner-single:nth-child(3){
+    background-image: url(../img/wp-mountains.jpg);
+    filter: grayscale(40%);
+}
+
+.overlay{
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.3);
+}
+
+.bullets{
+    position: absolute;
+    z-index: 4;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bullets span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(204, 204, 204, 0.322);
+    margin: 0 5px;
+}
+
+.bullets span.active-slider{
+    background-color: white;
+}
