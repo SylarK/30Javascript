@@ -4,52 +4,90 @@
     box-sizing: border-box;
 }
 
-html, body{
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+html{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background: cover;
+    text-align: center;
+    font-size: 10px;
 }
 
-.marker{
-    border: 2px solid red;
-}
-
-.container{
-    padding: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.container .row{
-    width: 100%;
+body{
+    margin: 0;
+    font-size: 2rem;
     display: flex;
-    justify-content: center;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
 }
 
-form input[type=text]{
-    width: 20vw;
-    height: 28px;
-    line-height: 25px;
-    font-family: sans-serif;
-    font-size: 1rem;
-    top: 0;
-    padding-left: 5px;
-    border: 1px solid rgba(0,0,0,0.4);
-    background: rgba(255, 255, 255, 0.8);
+
+
+.clock{
+    width: 40rem;
+    height: 40rem;
+    border: 20 solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), 
+                inset 0 0 0 3px #EFEFEF,
+                inset 0 0 10px black,
+                0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock .number{
+
+    --rotation : 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
 
 }
 
-form button{
-    top: 0;
-    width: 6vw;
-    height: 26px;
-    font-family: sans-serif;
-    line-height: 25px;
-    font-size: 0.8rem;
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(93, 104, 107, 0.4);
-    border-radius: 3px;
-    cursor: pointer;
+.clock .number-1{ --rotation: 30deg }
+.clock .number-2{ --rotation: 60deg }
+.clock .number-3{ --rotation: 90deg }
+.clock .number-4{ --rotation: 120deg }
+.clock .number-5{ --rotation: 150deg }
+.clock .number-6{ --rotation: 180deg }
+.clock .number-7{ --rotation: 210deg }
+.clock .number-8{ --rotation: 240deg }
+.clock .number-9{ --rotation: 270deg }
+.clock .number-10{ --rotation: 300deg }
+.clock .number-11{ --rotation: 330deg }
+.clock .number-12{ --rotation: 360deg }
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.stick{
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    
+}
+
+.hour-stick, .min-stick{
+
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+.sec-stick{
+
+    background: rgba(0, 0, 0, 0.4);
+
 }

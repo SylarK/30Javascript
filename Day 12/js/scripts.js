@@ -1,45 +1,24 @@
-const mykey = 'AIzaSyDOjJemmjLCAHVUYVpT5UyWHpVw9Xo2X-g';
-const myform = document.querySelector('form');
-const content = document.querySelector('.content');
+const secStick   = document.querySelector('.sec-stick');
+const minStick   = document.querySelector('.min-stick');
+const hourStick  = document.querySelector('.hour-stick');
 
-myform.addEventListener('submit', () => {
-    let x = document.querySelector('input').value;
-    x = x.replaceAll(' ','_');
-    x = x.replaceAll('.','_');
-    x = x.replaceAll('__','_');
-    
-    let api = 'https://www.googleapis.com/books/v1/volumes?q='+x+'&key='+mykey;
+function setDate(){
 
-    fetch(api)
-    .then(res => res.json())
-    .then(results)
+    const now = new Date();
 
+    const seconds = now.getSeconds();
+    const secondsDegrees = ((seconds / 60) * 360) + 90;
+    secStick.style.transform = `rotate(${secondsDegrees}deg)`;
 
-})
+    const mins = now.getMinutes();
+    const minsDegrees = ((mins / 60) * 360) + ((seconds/60) * 6) + 90;
+    minStick.style.transform = `rotate(${minsDegrees}deg)`;
 
-
-
-function results(res){
-
-    for( let i = 0; i < res.items.length; i++ ){
-        var item = res.items[i];
-
-        let newDiv = document.createElement('div');
-        newDiv.className = 'book';
-        newDiv.innerHTML = 'Hello '
-        content.appendChild(newDiv);
-
-    }
+    const hour = now.getHours();
+    const hourDegrees = ((hour / 12) * 360) + (( mins / 60) * 30) + 90;
+    hourStick.style.transform = `rotate(${hourDegrees}deg)`;
 
 }
 
-
-/*
-
-    https://developers.google.com/books/docs/v1/getting_started#JSONP
-    https://www.googleapis.com/books/v1/volumes?q=harry_potter&key=AIzaSyDOjJemmjLCAHVUYVpT5UyWHpVw9Xo2X-g
-    https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_document_createelement2
-    https://stackoverflow.com/questions/12622465/creating-a-div-element-inside-a-div-element-in-javascript
-    https://www.w3schools.com/jsref/met_node_appendchild.asp
-
-*/
+setInterval(setDate, 1000);
+setDate();
