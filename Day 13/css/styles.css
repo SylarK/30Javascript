@@ -5,95 +5,25 @@
 }
 
 html, body{
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #c9dbf5 0%, #626a77 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    color: rgba(0, 0, 0, 0.2);
 }
 
-.marker{
-    border: 2px solid red;
+h2{
+
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+    font-size: 100px;
+
 }
 
-.container{
-    padding: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.container .row{
-    width: 100%;
+.movement{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-}
-
-form input[type=text]{
-    width: 20vw;
-    height: 28px;
-    line-height: 25px;
-    font-family: sans-serif;
-    font-size: 1rem;
-    top: 0;
-    padding-left: 5px;
-    border: 1px solid rgba(0,0,0,0.4);
-    background: rgba(255, 255, 255, 0.8);
-
-}
-
-form button{
-    top: 0;
-    width: 6vw;
-    height: 26px;
-    font-family: sans-serif;
-    line-height: 25px;
-    font-size: 0.8rem;
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(93, 104, 107, 0.4);
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.book{
-    margin-top: 20px;
-    height: 35vh;
-    border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 5px;
-    padding:15px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.book .img-book{
-
-    border: 1px solid rgba(0,0,0,0.4);
-    height: 30vh;
-    min-width: 20%;
-
-}
-
-.book .data-book{
-
-    border: 1px solid rgba(0,0,0,0.4);
-    height: 30vh;
-    padding: 10px;
-    overflow: auto;
-
-}
-
-.book .data-book .title-book{
-
-    font-weight: 800;
-
-}
-
-.book .data-book .author-book{
-    color: rgba(0,0,0,0.7);
-}
-
-.book .data-book .description-book{
-    margin-top: 10px;
-    text-align: justify;
-    letter-spacing: 0.2px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
 }

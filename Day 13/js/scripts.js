@@ -1,61 +1,23 @@
-const mykey = 'AIzaSyDOjJemmjLCAHVUYVpT5UyWHpVw9Xo2X-g';
-const myform = document.querySelector('form');
-const content = document.querySelector('.content');
+const movement = document.querySelector('.movement');
+const text = movement.querySelector('h2');
+const walk = 500;
 
-myform.addEventListener('submit', () => {
-    let x = document.querySelector('input').value;
-    x = x.replace(' ','_');
-    x = x.replace('.','_');
-    
-    let api = 'https://www.googleapis.com/books/v1/volumes?q='+x+'&key='+mykey;
-    console.log(api);
-
-    fetch(api)
-        .then(res => console.log(res))
-        .then( setResults)
-
-
-})
-
-
-
-function setResults(res){
-
-    console.log('Entrou');
-
-    for( let i = 0; i < res.items.length; i++ ){
-        var item = res.items[i];
-
-        console.log(i);
-
-        /*let newBook = document.createElement('DIV');
-        let img     = document.createElement('DIV');
-        let dataBook= document.createElement('DIV');
-        let pTitle  = document.createElement('P');
-        let pAuthor  = document.createElement('P');
-        let pDescription  = document.createElement('P');
-
-        newBook.classList.add('book');
-        img.classList.add('img-book');
-        dataBook.classList.add('data-book');
-        pTitle.classList.add('title-book');
-        pAuthor.classList.add('author-book');
-        pDescription.classList.add('description-book');*/
-
-
-
-
+function shadow(e){
+    const { offsetWidth: width, offsetHeight: height} = movement;
+    let { offsetX: x , offsetY: y } = e;
+    if(this !== e.target) {
+        x = x + e.target.offsetLeft;
+        y = y + e.target.offsetTop;
     }
-
+    const xWalk = Math.round(( x / width * walk) - (walk / 2));
+    const yWalk = Math.round((y / height * walk) - (walk / 2));
+    text.style.textShadow = `
+      ${xWalk}px ${yWalk}px 0 rgba(219,56,219,0.7),
+      ${xWalk * -1}px ${yWalk}px 0 rgba(56,56,219,0.7),
+      ${yWalk}px ${xWalk * -1}px 0 rgba(56,181,219,0.7),
+      ${yWalk * -1}px ${xWalk}px 0 rgba(219,203,56,0.7)
+    
+    `;
 }
 
-
-/*
-
-    https://developers.google.com/books/docs/v1/getting_started#JSONP
-    https://www.googleapis.com/books/v1/volumes?q=harry_potter&key=AIzaSyDOjJemmjLCAHVUYVpT5UyWHpVw9Xo2X-g
-    https://www.w3schools.com/JSREF/tryit.asp?filename=tryjsref_document_createelement2
-    https://stackoverflow.com/questions/12622465/creating-a-div-element-inside-a-div-element-in-javascript
-    https://www.w3schools.com/jsref/met_node_appendchild.asp
-
-*/
+    movement.addEventListener('mousemove', shadow);
