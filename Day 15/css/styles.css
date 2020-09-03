@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.marker-red{
+    border: 2px solid red;
+}
+
+.marker-green{
+    border: 2px solid green;
+}
+
+/*  Grid left - Input data and history*/
+
+.input-data {
+    padding: 5%;
+}
+
+.input-data form input{
+    padding: 5px;
+}
+
+.input-data form input[type=text]{
+    width: 300px;
+}
+
+.input-data form input[type=number]{
+    width: 100px;
+}
+
+.input-data form button{
+    border: none;
+    background: none;
+}
+
+.row-values{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.history .card{
+    width: 85%;
+    background: rgba(226, 226, 226, 0.3);
+}
+
+.divisor{
+    border-right: solid 2px rgba(0, 0, 0, 0.2);
+}
+
+.positive{
+    background: rgba(95, 228, 106, 0.2) !important;
+}
+
+.negative{
+    background: rgba(255, 63, 63, 0.13) !important;
+}
+
+/* end Grid left */
+
+
+.output-panel {
+    padding: 4%;
+    border: 1px solid rgba(226, 226, 226, 0.3);
+    width: 100%;
+    text-align: center;
+}
+
+.output-panel span#moeda{
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.output-panel span#total{
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.data-entradas{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(73, 206, 73);
+    border-right: solid 2px rgba(0, 0, 0, 0.616);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.data-saidas{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: red;
+    padding: 15px;
+    margin-top: 10px;
+
+}
+
+.data-values span#moeda{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.data-values span.valores{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
