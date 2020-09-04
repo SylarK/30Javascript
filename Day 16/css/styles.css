@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100% ;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+h4{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input:focus{
+    border-bottom: 1px solid #9e9e9e !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.btn-submit{
+    float: right;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-cursos{
+    width: 300px;
+    height: 300px;
+    margin-left: 3%;
+}
+
+.card-cursos .card-image img{
+    width: 100%;
+    height: 200px;
+    opacity: 0.8;
+}
+
+.card-cursos .card-action{
+    height: 50px;
+}
+
+.moeda{
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.value-course{
+    font-size: 3rem !important;
+    font-weight: 300;
+}
+
+.description_course{
+
+    margin-top: 10px;
+
+}
