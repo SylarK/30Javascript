@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+
+    background: url('../img/board.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Caveat', cursive;
+
+}
+
+.marker-red{
+    border: 2px solid red;
+}
+
+.marker-blue{
+    border: 2px solid blue;
+}
+
+h2{
+    text-align: center;
+    font-size: 6rem;
+    padding: 10px;
+    color: rgba(245, 245, 245, 0.925);
+}
+
+.panel-questions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(245, 245, 245, 0.925);
+}
+
+.panel-questions .number{
+    height: 150px;
+    width: 250px;
+    font-size: 8rem;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.panel-questions .operator{
+
+    padding: 10px;
+    font-size: 8rem;
+
+}
+
+.panel-answer{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(245, 245, 245, 0.925);
+
+}
+
+.panel-answer .answer{
+
+    height: 100px;
+    width: 300px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.panel-answer .answer input[type=number]{
+
+    width: 50%;
+    min-height: 50px;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.925);
+    line-height: 40px;
+    background-color: rgba(245, 245, 245, 0.164);
+    border-radius: 6px;
+    font-size: 4rem;
+    -moz-appearance: textfield;
+    appearance: textfield;    
+}
+
+.panel-answer .answer input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+.panel-answer .answer input[type=number]:focus{
+    background-color: rgba(245, 245, 245, 0.164);
+}
+
+.panel-answer .answer input[type=number]:active{
+    background-color: rgba(245, 245, 245, 0.164);
+}
+
+.line-nivel{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+.line-nivel .nivel{
+
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.753);
+    font-size: 2rem;
+    margin-left: 35px;
+    cursor: pointer;
+
+}
+
+.line-nivel .nivel span{
+
+    border-right: 2px solid rgba(245, 245, 245, 0.342);
+    margin-left: 25%;
+
+}
+

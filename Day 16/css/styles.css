@@ -39,6 +39,12 @@ input:focus{
     -webkit-box-shadow: none !important;
 }
 
+input:active{
+    border-bottom: 1px solid #9e9e9e !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
 .btn-submit{
     float: right;
 }

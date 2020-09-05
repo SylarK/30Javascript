@@ -106,7 +106,7 @@ class Card{
 
 /*
 
-    https://i1.wp.com/storage.googleapis.com/blog-images-backup/1*wFL3csJ96lQpY0IVT9SE3w.jpeg?ssl=1 - Vue JS img
+         - Vue JS img
     https://static.vecteezy.com/system/resources/previews/000/523/378/non_2x/web-development-application-design-coding-and-programming-on-laptop-and-smartphone-concept-with-programming-language-and-program-code-and-layout-on-screen-vector.jpg - Programming img
     https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png    - JS img
 
