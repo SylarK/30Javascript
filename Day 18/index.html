@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 18</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <h2><span><img src="img/blocked.svg"></span>Password</h2>
+
+    <div class="myrow">
+
+        <div class="col1">
+
+            <form action="" method="post">
+
+                <div class="form-group">
+                    <input required autocomplete="off" autofocus class="form-control" type="text" name="title" id="title" placeholder="Título">
+                </div>
+
+                <div class="form-group">
+                    <label for="Type">Tipo de senha: </label>
+                    <select name="Type"  id="Type" class="form-control">
+                        <option value="Alpha">Alfanumérico</option>
+                        <option value="Number">Numérico</option>
+                        <option value="Letters">Somente letras</option>
+                    </select>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="uppercase" id="uppercase">
+                    <label class="form-check-label" for="uppercase">
+                      Letras maiúsculas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="lowercase" id="lowercase">
+                    <label class="form-check-label" for="lowercase">
+                      Letras minúsculas
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Gerar</button>
+                
+            </form>
+            <div class="clear"></div>
+            <div class="output-password">
+
+                <p id="show-password"></p>
+
+                <button id='salvar' class="btn btn-secondary">Salvar</button>
+            </div>
+
+            
+
+        </div>
+        <div class="col2">
+
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Senha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+
+        </div>
+
+        <div class="eye"> 
+
+            <div class="close-eye">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-slash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.79 12.912l-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708l-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829z"/>
+                    <path fill-rule="evenodd" d="M13.646 14.354l-12-12 .708-.708 12 12-.708.708z"/>
+                </svg>
+            </div>
+            <div class="open-eye">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                </svg>
+            </div>
+            
+
+        </div>
+        <!--
+        
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+        <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+        </svg>
+    
+    -->
+
+    </div>
+    
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
