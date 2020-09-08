@@ -1,0 +1,11 @@
+
+#image{
+
+    height: 256px;
+    width: 256px;
+
+    background: url('../img/movement.png') 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
