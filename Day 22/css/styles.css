@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+}
+
+.marker{
+    border: 2px solid red;
+}
+
+.col1{
+    margin-top: 15px;
+    width: 30%;
+    height: 100%;
+    background: rgba(139, 139, 139, 0.1);
+}
+
+.col2{
+    margin-top: 10px;
+    width: 70%;
+    height: 100%;
+    margin-left: 15px;
+
+}
+
+.panel{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.book-card{
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0,0,0,0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+form button{
+    float: right;
+    margin-right: 5%;
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.gallery .desc{
+    padding: 15px;
+    text-align: center;
+}

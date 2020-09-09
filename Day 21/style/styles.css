@@ -1,0 +1,53 @@
+html, body{
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+h3{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: grey;
+
+}
+
+.container{
+
+    padding: 5vh;
+}
+
+#progContainer{
+
+    width: 100%;
+    background-color: rgb(184, 184, 184);
+
+}
+
+#progress{
+
+    width: 1%;
+    background-color: rgb(60, 39, 247);
+    height: 5vh;
+
+
+
+}
+
+#btn-click{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2vh;
+    font-weight: bold;
+
+}
+
+#btn-click:hover{
+    
+    cursor: pointer;
+    background-color: rgb(242, 244, 247)
+
+
+}
