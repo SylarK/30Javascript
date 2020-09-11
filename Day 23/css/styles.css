@@ -5,76 +5,98 @@
 }
 
 html, body{
-
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-
 }
+
+.container{
+    height: 100%;
+}
+
 .marker{
     border: 2px solid red;
+}
+
+.col1{
+    margin-top: 15px;
+    width: 30%;
+    height: 100%;
+    background: rgba(139, 139, 139, 0.1);
+}
+
+.col2{
+    margin-top: 10px;
+    width: 70%;
+    height: 100%;
+    margin-left: 15px;
+
 }
 
 .panel{
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
+    flex-direction: row;
+
 }
 
-.squad{
-    border: 1px solid rgba(0, 0, 0, 0.151);
+.book-card{
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0,0,0,0.8);
     padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-.squad h3{
+    font-size: 30px;
     text-align: center;
-    font-size: 3rem;
-    font-weight: 300;
+
+
 }
 
-.squad h3 span img{
-    width: 100px;
-    height: 100px;
+form button{
+    float: right;
+    margin-right: 5%;
 }
 
-.charm{
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 375px;
+}
+
+.gallery img{
     width: 100%;
-    height: 40px;
-    background:url('https://i.pinimg.com/originals/1d/21/7e/1d217e468b82294d37f178d7f19b4f04.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 260px;
 }
 
-.squad input[type='text'], input[type='number']{
-    width: 100%;
+.gallery .desc{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .modal {
+    position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 5; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    transition: all ease-in 2s;
   }
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #e6e6e6f3;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 40px !important;
+    border: 1px solid rgba(136, 136, 136, 0.904);
     width: 80%;
+    margin-top: 2%;
   }
   
   /* The Close Button */
@@ -90,10 +112,4 @@ html, body{
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  #answer{
-
-    padding: 15px;
-
   }
