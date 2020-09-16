@@ -29,8 +29,11 @@ const winnigConditions = [
 
 /* Funções */
 
-function changePlayer(player){
 
+
+function changePlayer(player){
+    //Função criada apenas para deixar a interface para o usuário mais amigável
+    
     if(player == 'X'){
         return 1;
     } else {
