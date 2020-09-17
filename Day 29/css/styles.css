@@ -12,8 +12,7 @@ body {
 
 }  
 
-/* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* INTRO SECTION */
 
 .intro {
   background: #8ae9f662;
@@ -33,8 +32,7 @@ h1 {
 }
 
 
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* TIMELINE */
 
 .timeline ul {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
@@ -107,8 +105,7 @@ time {
 }
 
 
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* EFFECTS */
 
 .timeline ul li::after {
   transition: background .5s ease-in-out;
@@ -139,8 +136,7 @@ time {
 }
 
 
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* GENERAL MEDIA QUERIES */
 
 @media screen and (max-width: 900px) {
   .timeline ul li div {
