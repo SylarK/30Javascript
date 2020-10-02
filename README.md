@@ -95,3 +95,34 @@ de um pomodoro. Marca-se o tempo padrão de 25 minutos, podendo pausa-lo ou reto
 
 ```
 
+> Dia - 8
+
+> > ![Alt text](https://media.giphy.com/media/xgjkZ7f1CjeIcQz9zS/giphy.gif "Dia 8 - GIF")
+
+```
+
+A construção dessa aplicação baseou-se apenasn a manipulação da inclusão e exclusão das classes nas divs correspondentes
+ao click realizado no escopo de cada imagem. Atribui-se no stylesheet uma transition e diversas estilizações para darmos 
+o efeito de movimento.
+
+```
+
+> Dia - 9
+
+> > ![Screenshot](https://raw.githubusercontent.com/SylarK/30Javascript/master/img/9.JPG "Dia 9 - Imagem a")
+
+```
+Este é um carrousel criado a partir da utilização do javascript (jquery); cheguei a utilizar quase o mesmo código em diversas aplicações, 
+é bem versátil. Atualmente tenho este código funcionando em meu website pessoal (https://amadodev.com , caso queiram ver o funcionamento).
+
+```
+
+> Dia - 10
+
+> > ![Alt text](https://media.giphy.com/media/eqcmWCh4z008eL3rvF/giphy.gif "Dia 10 - GIF")
+
+```
+Utilizei funções nativas do jquery para realizar os efeitos demonstrados, ficou muito mais fácil de realizar o filter (pela class) e 
+as funções de mudar o display das divs etc. Utilizei animes e filmes que gosto de assistir ocasionalmente.
+
+```
