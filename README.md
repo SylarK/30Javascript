@@ -4,7 +4,7 @@
 #### O progresso do desafio foi postado diariamente através de fotos e vídeos em meu perfil no linkedin.
  
  
-> Dia - 1 
+> [Dia - 1 ](https://github.com/SylarK/30Javascript/tree/master/Days/Day%201)
 
 > > ![Screenshot](https://raw.githubusercontent.com/SylarK/30Javascript/master/img/1.JPG "Dia 1 - Imagem")
 
@@ -15,7 +15,7 @@ quanto a existência do som e emitimos o som característico do item (prato de a
 
 ```
 
-> Dia - 2
+> [Dia - 2](https://github.com/SylarK/30Javascript/tree/master/Days/Day%202)
 
 > > ![Screenshot](https://raw.githubusercontent.com/SylarK/30Javascript/master/img/2a.JPG "Dia 2 - Imagem a")
 
@@ -29,7 +29,7 @@ Após o usuário acertar todas as cartas, o jogo trava e aparecerá a mensagem a
 
 ```
 
-> Dia - 3
+> [Dia - 3](https://github.com/SylarK/30Javascript/tree/master/Days/Day%203)
 
 > > ![Screenshot](https://raw.githubusercontent.com/SylarK/30Javascript/master/img/3a.JPG "Dia 3 - Imagem a")
 
