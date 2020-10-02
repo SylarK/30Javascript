@@ -316,7 +316,7 @@ De forma que a medida com que descemos a tela o efeito é aplicado às divs.
 > > ![Screenshot](https://raw.githubusercontent.com/SylarK/30Javascript/master/img/30.JPG "Dia 30 - Imagem a")
 
 ```
-Durante o desafio, aprimorei muito do meu conhecimento e isso me ajudou a terminar de desenvolver parte de meu site.
+Durante o desafio, aprimorei meu conhecimento e isso me ajudou a terminar de desenvolver parte de meu site.
 Utilizei muitas das coisas que aprendi durante este desafio (apesar de ter alterado algumas coisas para melhor se 
 adequar ao meu website). 
 Caso tenha interesse pode conferir através do link https://amadodev.com .
